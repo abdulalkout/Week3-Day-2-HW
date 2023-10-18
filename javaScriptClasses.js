@@ -1,11 +1,9 @@
 // Classes HW
 
 class Cat {
-    constructor(eyes, mouth, tail){
-        this.eyes = eyes;
-        this.mouth = mouth;
-        this. tail = tail;
-    }
+    eyes = 2;
+    mouth = 1;
+    tail = 1;
 
     eat(food){
         console.log(`I am eating ${food}, yammymeao`)
@@ -20,8 +18,8 @@ class Cat {
     }
 }
 
-const tom = new Cat(2, 1, 1);
-const jerry = new Cat(2, 1, 0);
+const tom = new Cat;
+const jerry = new Cat;
 
 // console.log(`${tom.eyes} and ${jerry.walk}`)
 console.log(tom);
@@ -35,3 +33,31 @@ console.log('------- jerry --------')
 jerry.drink("water");
 jerry.eat('tuna');
 jerry.walk();
+
+
+// -----------------------------Q2---------------------------//
+
+class Pirate {
+
+    constructor(hat, captainName, destination){
+        this.hat = hat;
+        this.captainName = captainName;
+        this.destination = destination;
+    }
+
+    sail(){
+        console.log(`sail to ${this.destination} with ${this.captainName}`);
+    }
+
+    lookingFor(toLookFor){
+        console.log(`I'm trying to find ${toLookFor}`);
+    }
+
+    pirateSounds(){
+        console.log('yoooo hoooooo');
+    }
+  
+}
+
+const jollyRoger = [new Pirate(true, 'Lofy', 'One Pice'), new Pirate(false, 'Zoro', 'where ever lofy goes'), new Pirate(false, 'yosup', 'does not know')];
+const blackPearl = [new Pirate(true, '',''), new Pirate()]

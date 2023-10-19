@@ -50,7 +50,7 @@ class Pirate {
     }
 
     lookingFor(toLookFor){
-        console.log(`I'm trying to find ${toLookFor}`);
+        console.log(`I'm trying to find the ${toLookFor}`);
     }
 
     pirateSounds(){
@@ -60,4 +60,13 @@ class Pirate {
 }
 
 const jollyRoger = [new Pirate(true, 'Lofy', 'One Pice'), new Pirate(false, 'Zoro', 'where ever lofy goes'), new Pirate(false, 'yosup', 'does not know')];
-const blackPearl = [new Pirate(true, '',''), new Pirate()]
+const blackPearl = [new Pirate(true, 'Jack Sparow','fountain of youth '), new Pirate(false, 'Abdul', 'no one knows'), new Pirate(true, 'MERN developer', 'VS code')]
+
+jollyRoger.forEach(pirateClass => {
+    console.log(pirateClass);
+});
+blackPearl.forEach(pirateClass => {
+    console.log(pirateClass);
+});
+
+console.log(jollyRoger[0].lookingFor('One Pice'))

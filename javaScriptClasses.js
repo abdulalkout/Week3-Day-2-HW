@@ -6,15 +6,15 @@ class Cat {
     tail = 1;
 
     eat(food){
-        console.log(`I am eating ${food}, yammymeao`)
+        console.log(`I am eating ${food}, yammymeao`);
     }
 
     drink(myDrink){
-        console.log(`I am drinking ${myDrink}`)
+        console.log(`I am drinking ${myDrink}`);
     }
 
     walk(){
-        console.log('walk walk')
+        console.log('walk walk');
     }
 }
 
@@ -25,11 +25,11 @@ const jerry = new Cat;
 console.log(tom);
 console.log(jerry);
 
-console.log('------- tom --------')
+console.log('------- tom --------');
 tom.drink("milk");
 tom.eat('fish');
 tom.walk();
-console.log('------- jerry --------')
+console.log('------- jerry --------');
 jerry.drink("water");
 jerry.eat('tuna');
 jerry.walk();
@@ -60,7 +60,7 @@ class Pirate {
 }
 
 const jollyRoger = [new Pirate(true, 'Lofy', 'One Pice'), new Pirate(false, 'Zoro', 'where ever lofy goes'), new Pirate(false, 'yosup', 'does not know')];
-const blackPearl = [new Pirate(true, 'Jack Sparow','fountain of youth '), new Pirate(false, 'Abdul', 'no one knows'), new Pirate(true, 'MERN developer', 'VS code')]
+const blackPearl = [new Pirate(true, 'Jack Sparow','fountain of youth '), new Pirate(false, 'Abdul', 'no one knows'), new Pirate(true, 'MERN developer', 'VS code')];
 
 jollyRoger.forEach(pirateClass => {
     console.log(pirateClass);
@@ -69,4 +69,4 @@ blackPearl.forEach(pirateClass => {
     console.log(pirateClass);
 });
 
-console.log(jollyRoger[0].lookingFor('One Pice'))
+console.log(jollyRoger[0].lookingFor('One Pice'));
